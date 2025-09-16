@@ -1,18 +1,28 @@
 <template>
+  <MenuComponent/>
   <BodyComponent/>
+  <FooterComponent/>
 </template>
 
 <script>
-import BodyComponent from './components/BodyComponent.vue'
+import MenuComponent from './components/MenuComponent.vue';
+import BodyComponent from './components/BodyComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    BodyComponent
+    MenuComponent,
+    BodyComponent,
+    FooterComponent
   }
 }
 </script>
 
 <style>
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
